@@ -2,7 +2,7 @@ const config = require("../config/config");
 const Sequelize = require('sequelize');
 require('dotenv').config();
 const Config = config.config
-const sequelize = new Sequelize("e-commerce","postgres","123",{
+const sequelize = new Sequelize(Config.db,Config.USERNAME,Config.PASSWORD,{
     dialect:"postgres",
     host:"localhost",
     port:5433,
