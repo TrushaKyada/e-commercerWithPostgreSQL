@@ -2,11 +2,11 @@ require("dotenv").config();
 exports.config = {
     database:{
         db:process.env.DB || "e-commerce",
-        username:process.env.USERNAME || "postgres",
-        password:process.env.PASSWORD || "123",
-        dialect:process.env.DIALECT || "postgres",
-        host:process.env.HOST || "localhost",
-        port:process.env.port || 5433
+        username:process.env.USERNAME,
+        password:process.env.PASSWORD,
+        dialect:process.env.DIALECT,
+        host:process.env.HOST,
+        port:process.env.port
     },
     protocol:process.env.PROTOCOL || "http",
     port:process.env.PORT || 8080,
