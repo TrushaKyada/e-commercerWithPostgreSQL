@@ -3,9 +3,9 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 const Config = config.config
 const sequelize = new Sequelize(Config.db,Config.USERNAME,Config.PASSWORD,{
-    dialect:"postgres",
-    host:"localhost",
-    port:5433,
+    dialect:"Config.dialect",
+    host:"Config.host",
+    port:Config.port,
     pool:{
         min:Config.pool.min,
         max:Config.pool.max,
